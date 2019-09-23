@@ -1,6 +1,10 @@
 #Minitest
 ##A simple app with some vulnerabilities
 
+## This 
+## is
+## Branch 2
+
 The goal is to have a very small app to make scans fast while including more than one vulnerability and a potential fix.
 
 Recommended use:
