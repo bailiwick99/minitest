@@ -38,7 +38,7 @@ jobs:
         sca_username: ${{ secrets.SCA_USERNAME }} 
         sca_password: ${{ secrets.SCA_PASSWORD }} 
         break_build: false
-        bug_tracker: GITHUBPULL
+        #bug_tracker: GITHUBPULL
         scanners: sca,sast
         # edit - set to full to support small demos .
         github_token: ${{secrets.GH_TOKEN}}
