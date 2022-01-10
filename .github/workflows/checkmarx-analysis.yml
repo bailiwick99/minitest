@@ -38,6 +38,7 @@ jobs:
         sca_username: ${{ secrets.SCA_USERNAME }} 
         sca_password: ${{ secrets.SCA_PASSWORD }} 
         break_build: false
+        #bug_tracker: GITHUBPULL
         scanners: sca,sast
         # edit - set to full to support small demos .
         github_token: ${{secrets.GH_TOKEN}}
@@ -45,7 +46,7 @@ jobs:
         incremental: false
         params: --checkmarx.incremental=false --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }}  --branch=${{ github.ref }} --cxflow.bug-tracker=GitHub --repo-url="https://github.com/bailiwick99/minitest" --cx-flow.filterSeverity --cx-flow.filterCategory
         # Upload the Report for CodeQL/Security Alerts
-#   - name: Upload SARIF file
+#    - name: Upload SARIF file
 #      uses: github/codeql-action/upload-sarif@v1
-#     with:
-#       sarif_file: cx.sarif
+#      with:
+#        sarif_file: cx.sarif
